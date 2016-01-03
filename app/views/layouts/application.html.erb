@@ -30,13 +30,21 @@ data-target="#bs-example-navbar-collapse-1">
 <%= link_to "Athletes Den", root_path, class: "navbar-brand" %>
 
 </div>
-
+<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+    <li class="active"><%= link_to "Home", root_path %>
+    <span class="sr-only">(current)</span></li>
+  </ul>
+</div>
 </div>
 
 </nav>
 
 </header>
-<%= yield %>
+<div class="container">
+  <%= yield %>
+</div>
+
 
 </body>
 </html>
