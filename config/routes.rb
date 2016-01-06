@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'dashboard/index'
   
   resources :users do
-    resource :exercises
+    resources :exercises
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
