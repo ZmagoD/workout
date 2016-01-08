@@ -7,7 +7,7 @@ RSpec.feature 'Creating Exercise' do
     login_as(@john)
   end
   
-  scenario "with valid inputs" do
+  scenario "with valid inputs" do 
     visit '/'
     click_link "My Longue"
     click_link "New Workout"

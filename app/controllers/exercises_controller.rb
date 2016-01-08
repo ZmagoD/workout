@@ -3,6 +3,7 @@ class ExercisesController < ApplicationController
   before_action :set_exercise , except: [:index, :new, :create]
   
   def index
+    @exercises = current_user.exercises.all
   end
   
   def new
@@ -30,6 +31,6 @@ class ExercisesController < ApplicationController
   end
   
   def set_exercise
-    @exercise = current_user.exercises.find(params[:user_id])
+    @exercise = current_user.exercises.find(params[:id])
   end
 end
