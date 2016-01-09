@@ -1,3 +1,4 @@
+require 'date'
 require 'rails_helper'
 
 RSpec.feature 'Creating Exercise' do
