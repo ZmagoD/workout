@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
          
          
   has_many :exercises
+  validates :first_name, presence: true
+  validates :last_name, presence: true
   
   
   def full_name 
