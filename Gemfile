@@ -26,6 +26,7 @@ gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'autoprefixer-rails', '~> 5.2.0' 
 gem 'devise', '~> 3.5.1'
 gem 'jquery-ui-rails', '5.0.5'
+gem 'will_paginate-bootstrap'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'rspec-rails', '3.2.3'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
+  gem 'faker'
 end
 
 group :development do
